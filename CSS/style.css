@@ -31,6 +31,7 @@ header {
   width: 100%;
   height: auto;
   background-color: var(--verde);
+  z-index: 9999;
 }
 
 #menu-toggle {
@@ -159,6 +160,128 @@ section {
   border-radius: 53px; /*tirar ao final do projeto*/
   padding-top: 110px;
   padding-bottom: 100px;
+}
+
+.secao-inicio {
+    display: flex;
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+.coluna-esquerda {
+    flex-shrink: 0; 
+    padding: 0 20px;
+    text-align: left;
+}
+
+.titulo-projetos {
+    font-size: 2.5em;
+    color: var(--verde); 
+    margin-bottom: 10px;
+}
+
+.btn-mais-projetos {
+    display: block;
+    padding: 8px 15px;
+    border: 1px solid var(--vermelho);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--vermelho);
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.card-principal {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    overflow: hidden;
+}
+
+.card-conteudo {
+    display: flex;
+}
+
+.card-imagem {
+    flex: 0 0 40%;
+    position: absolute;
+}
+
+.imagem-projeto {
+    width: 15%;
+    height: 15%;
+    object-fit: fill;
+    display: block;
+}
+
+.credito-foto {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 0.7em;
+    padding: 3px;
+    text-align: center;
+    z-index: 1;
+}
+
+.card-texto {
+    flex: 1;
+    padding: 25px;
+}
+
+.card-texto h2 {
+    color: var(--verde);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-texto p {
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.card-texto .data {
+    font-size: 0.8em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.btn-leia-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #2e5c46;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-leia-mais:hover {
+    background-color: white;
+}
+
+.seta-nav {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--vermelho);
+    margin: 0 5px;
+    transform: rotate(0deg); 
+}
+
+.seta-nav.esquerda {
+    transform: rotate(180deg);
 }
 
 div.divisão {
